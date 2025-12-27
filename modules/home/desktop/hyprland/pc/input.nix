@@ -18,7 +18,7 @@
       hotspot_padding = 1;
     };
 
-    # Per-device configurations
+    # Specific Mouse Configurations
     device = [
       {
         name = "razer-razer-viper-v3-pro";

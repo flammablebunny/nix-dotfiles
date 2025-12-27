@@ -3,8 +3,8 @@ let
   bunnyAge = "age1vt7xwl0rgxcn2dadz7cq33vq74wzvcf6n9c4c09wgca0hrdqsecssyth5t";
 
   # SSH key locations
-  pc = "/run/agenix.d/17/ssh-private-key";
-  laptop = ""; # TODO: Add after installing nix on laptop
+  pc = "/run/agenix/ssh-private-key";
+  laptop = "/run/agenix/ssh-private-key";
 
   # All keys that can decrypt (user key always included for editing)
   allKeys = [ bunnyAge ] ++ (if pc != "" then [ pc ] else []) ++ (if laptop != "" then [ laptop ] else []);
